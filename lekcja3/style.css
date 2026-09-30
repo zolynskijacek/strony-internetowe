@@ -9,6 +9,10 @@
   --color-border: #444;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,10 +27,6 @@ body {
   padding: 20px; //odstęp między obramowaniem a treścią wewnątrz.
   border: 3px solid var(--color-primary); //rysuje ramkę
   background-color: var(--color-bg);
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
 }
 .card-header {
   padding: 15px;

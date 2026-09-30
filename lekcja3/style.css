@@ -16,4 +16,65 @@ body {
   color: var(--color-text);
 }
 
-/* TODO: stylowanie karty gracza */
+.player-card {
+  max-width: 500px; //ustawia maksymalną szerokość treści.
+  margin: 40px auto; //dodaje margines z góry i z dołu
+  padding: 20px; //odstęp między obramowaniem a treścią wewnątrz.
+  border: 3px solid var(--color-primary); //rysuje ramkę
+  background-color: var(--color-bg);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.card-header {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--color-accent);
+  text-align: center;
+}
+.card-section {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+.card-footer {
+  padding: 10px;
+  margin-top: 15px;
+  border-top: 2px solid var(--color-accent);
+  text-align: center;
+  font-size: 0.85em;
+}
+.highlight {
+  color: var(--color-highlight);
+  font-weight: bold;
+}
+.card-section h2 {
+  margin-bottom: 10px;
+  color: var(--color-accent);
+}
+.bio {
+  border-left: 4px solid #28a745;
+}
+
+.equipment {
+  border-left: 4px solid #fd7e14;
+}
+
+.achievements {
+  border-left: 4px solid #6f42c1;
+}
+.card-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-section li {
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.card-section li:last-child {
+  border-bottom: none;
+}
